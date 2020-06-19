@@ -5,11 +5,11 @@ app.set("view engine","ejs");
 
 let db ;
 const MongoClient = require("mongodb").MongoClient;
-app.listen(3003,function(){
+app.listen(3000,function(){
     console.log("ff");
 })
 app.use(express.static(__dirname));
- MongoClient.connect("mongodb://localhost:27017", (err, client) => {
+ MongoClient.connect("mongodb+srv://daoninhthai:fy3kD102HF63LTt6@cluster0-mgy1e.azure.mongodb.net/mongodb?retryWrites=true&w=majority", (err, client) => {
      if (err) {
         return console.log(err)
     }
