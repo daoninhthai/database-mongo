@@ -5,9 +5,7 @@ app.set("view engine","ejs");
 
 let db ;
 const MongoClient = require("mongodb").MongoClient;
-app.listen(function(){
-    console.log("ff");
-})
+app.listen(process.env.PORT || 5000)
 app.use(express.static(__dirname));
  MongoClient.connect("mongodb+srv://daoninhthai:fy3kD102HF63LTt6@cluster0-mgy1e.azure.mongodb.net/mongodb?retryWrites=true&w=majority", (err, client) => {
      if (err) {
