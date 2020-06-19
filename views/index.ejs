@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Infinity travel</title>
+        <script src="https://kit.fontawesome.com/15d6788ae2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="shortcut icon" type="text/css" href="image/infinity-logo.ico">
+    </head>
+    <body>
+        
+        <header class="page-header">
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="image/travel-logo_2.png" alt="Logo" id="logo">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">investors</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main > 
+    
+            <div class="banner">
+                <div class="banner-block">
+                    <h1 >Life is short <br> and <br>the world is wide</h1><br>
+                    <a href="#" class="learn-more">Learn more</a>
+                </div>
+            </div><h1 class="tt">6 điểm đến hấp dẫn nhất năm 2019</h1>
+            <form action="/travel2" method="POST" id="them">
+                <input type="text" name="anh" placeholder="Link ảnh" >
+                <input type="text" name="name" placeholder="Tên địa điểm">
+                <button type="submit">Thêm</button>
+
+            </form>
+            <form action="/travel2" method="POST" class="wrapper">
+            
+            
+            <div class="grid-menu ">
+            <% for( let i = 0; i < todoList.length; i++ ) { %>
+                 <div class="grid-item">
+                    <a href="/travel2/<%= todoList[i]._id %> "><img src="<%= todoList[i].anh %> " alt="thanh-pho-amsterdam" class="img"> 
+                         <p><%= todoList[i].name %></p>
+                            </a> </div> 
+                            <% } %>
+            
+            </div>
+            
+        </form>
+        </main>
+        <footer class="page-footer">
+            <div class="wrapper">
+                <div class="footer-col">
+                    <h3>About</h3>
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>News</li>
+                        <li>Events</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li>Work with Us</li>
+                        <li>Subscribe for Newsletter</li>
+                        <li>Forum</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Help Center</h3>
+                    <ul>
+                        <li>FAQs</li>
+                        <li>Contact Us</li>
+                        <li>How to Start a Challenge</li>
+                    </ul>
+                </div>
+                <div class="footer-col social">
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></i></a></li>
+                        <li><a href="#" class="tw"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="gp"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                    <p class="copy">© 2019. INFINITY-TRAVEL. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+  
+
+      
+</body>
+</html>
