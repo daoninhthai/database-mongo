@@ -5,7 +5,7 @@ app.set("view engine","ejs");
 
 let db ;
 const MongoClient = require("mongodb").MongoClient;
-app.listen(3000,function(){
+app.listen(function(){
     console.log("ff");
 })
 app.use(express.static(__dirname));
