@@ -80,6 +80,7 @@ export default {
 const formatDisplayDate = (dateStr) => {
     if (!dateStr) return '';
     const date = new Date(dateStr);
+
     return date.toLocaleDateString('vi-VN', {
         year: 'numeric',
         month: '2-digit',
