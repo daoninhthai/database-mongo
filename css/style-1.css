@@ -1,0 +1,216 @@
+/*=========RESET CSS=========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*=========BASE STYLE=========*/
+body{
+    color: #fff;
+
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.wrapper{
+    width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+/*========= HEADER =========*/
+
+.page-header{
+    height: 66px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#logo{
+    width: 180px;
+}
+.page-header .logo{
+    float: left;
+    padding-top: 5px;
+    box-sizing: border-box;
+
+}
+.page-header .main-nav{
+    float: right;
+}
+
+.main-nav li{
+    float: left;
+    margin-left: 90px;
+}
+.main-nav li a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 66px;
+}
+.main-nav li a:hover {
+    color: #ff0000;
+}
+
+
+/*========= Main =========*/
+main{
+    display: flex;
+    justify-content: center;
+    background-color: #1D1A1A;
+
+
+}
+h1{
+    font-weight: 1500;
+    font-size: 30px;
+    margin-top: 90px;
+    border-bottom: 2px solid #fff;
+}
+#back{
+    font-size: 30px;
+    padding-top: 150px;
+    margin-left: 0;
+    float: left;
+    width: 100px;
+    color:#382655;
+}
+#back:hover{
+    color: aqua;
+}
+
+.img{
+    max-width: 550px;
+   padding-top: 20px;
+   border-radius: 10px;
+
+
+}
+.info{
+     max-width: 550px;
+    margin-top: 150px;
+    margin-left: 50px;
+    border-bottom: 2px solid aqua;
+}
+.button{
+    margin-top: 40px;
+    background-color: aqua;
+    color: black;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+
+
+}
+/*========= Footer =========*/
+.page-footer {
+    background: #111111;
+    padding-top: 25px;
+}
+.footer-col {
+    width: 25%;
+    float: left;
+}
+.page-footer h3 {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.page-footer h3::after {
+    content: '.';
+    font-size: 0;
+    width: 90%;
+    height: 1px;
+    background: #292929;
+    display: block;
+    margin: 15px 0;
+}
+.page-footer li {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.6;
+}
+.page-footer li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.copy {
+    color: #585858;
+    margin-top: 32px;
+}
+.social a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+}
+.social a:hover {
+    background: #fff;
+    color: #ff0000;
+}
+.social li {
+    display: inline-block;
+}
+.wrapper{
+    width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+.page-footer>.wrapper::after{
+    content: '.';
+    font-size: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;
+}    /* Cache result for subsequent calls */
+    /* Cache result for subsequent calls */

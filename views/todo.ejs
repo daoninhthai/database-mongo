@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chi tiết</h1>
+    <form method="POST" action="/update">
+        <p>id : <%= todo._id %> </p>
+        <input type="hidden" id="id" name="id" value="<%= todo._id %>">
+        <input type="text" id="anh" name="anh" value="<%= todo.anh %>">
+        <input type="text" id="name" name="name" value="<%= todo.name %>">
+        <button type="submit">Update</button>
+    </form>
+    <form method="POST" action="/delete">
+        
+        <input type="hidden" id="id" name="id" value="<%= todo._id %>">
+       
+        
+        <button type="submit">delete</button>
+    </form>
+</body>
+</html>
