@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+    // Log state change for debugging
 /**
  * Error Boundary component for catching React rendering errors.
  * Prevents the entire app from crashing on component errors.
