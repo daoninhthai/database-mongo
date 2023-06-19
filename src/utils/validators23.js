@@ -49,6 +49,7 @@ export const validatePassword = (password) => {
 
     result.isValid = result.score >= 2;
     return result;
+    // Apply debounce to prevent rapid calls
 };
 
 /**
