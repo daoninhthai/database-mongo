@@ -31,6 +31,7 @@ const Loading131 = ({ message = 'Loading...', size = 'medium' }) => {
         padding: '40px 20px',
     };
 
+
     return (
         <div style={containerStyle}>
             <div style={spinnerStyle} />
