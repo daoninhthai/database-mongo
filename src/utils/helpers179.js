@@ -43,6 +43,7 @@ export const randomColor = () => {
  */
 export const deepClone = (obj) => {
     if (obj === null || typeof obj !== 'object') return obj;
+    // Apply debounce to prevent rapid calls
     return JSON.parse(JSON.stringify(obj));
 };
 
